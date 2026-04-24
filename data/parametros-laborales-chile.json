@@ -4,7 +4,7 @@
   "product": "Calculadora Laboral Chile",
   "version": "2026.04.1",
   "status": "active",
-  "lastReviewedAt": "2026-04-24",
+  "lastReviewedAt": "2026-04-25",
   "validFrom": "2026-04-01",
   "nextSuggestedReviewAt": "2026-05-01",
   "notes": "Archivo remoto/manual para parametros laborales variables. Los valores deben revisarse contra fuentes oficiales antes de publicar cambios.",
@@ -54,7 +54,7 @@
   ],
   "managedParameters": {
     "sueldoMinimo": {
-      "value": 539000,
+      "value": 560000,
       "unit": "CLP",
       "label": "Sueldo minimo mensual",
       "validity": "Vigente desde enero 2026",
