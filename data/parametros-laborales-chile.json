@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "country": "CL",
+  "product": "Calculadora Laboral Chile",
+  "version": "2026.04.1",
+  "status": "active",
+  "lastReviewedAt": "2026-04-24",
+  "validFrom": "2026-04-01",
+  "nextSuggestedReviewAt": "2026-05-01",
+  "notes": "Archivo remoto/manual para parametros laborales variables. Los valores deben revisarse contra fuentes oficiales antes de publicar cambios.",
+  "sources": [
+    {
+      "id": "sii-valores",
+      "name": "SII - Valores y fechas",
+      "url": "https://www.sii.cl/valores_y_fechas/index_valores_y_fechas.html",
+      "type": "official-page"
+    },
+    {
+      "id": "sii-honorarios",
+      "name": "SII - Boletas de honorarios",
+      "url": "https://www.sii.cl/destacados/boletas_honorarios/index.html",
+      "type": "official-page"
+    },
+    {
+      "id": "dt-ingreso-minimo",
+      "name": "Direccion del Trabajo - Ingreso minimo mensual",
+      "url": "https://www.dt.gob.cl/portal/1628/w3-article-60141.html",
+      "type": "official-page"
+    },
+    {
+      "id": "spensiones-afp",
+      "name": "Superintendencia de Pensiones - Sistema AFP",
+      "url": "https://www.spensiones.cl/portal/institucional/594/w3-propertyvalue-9897.html",
+      "type": "official-page"
+    },
+    {
+      "id": "spensiones-tope-afp",
+      "name": "Superintendencia de Pensiones - Tope imponible AFP 2026",
+      "url": "https://www.spensiones.cl/portal/institucional/594/w3-article-16883.html",
+      "type": "official-page"
+    },
+    {
+      "id": "spensiones-tope-afc",
+      "name": "Superintendencia de Pensiones - Tope imponible AFC 2026",
+      "url": "https://www.spensiones.cl/portal/institucional/594/w3-article-16922.html",
+      "type": "official-page"
+    },
+    {
+      "id": "afc-cotizaciones",
+      "name": "AFC Chile - Cotizaciones",
+      "url": "https://www.afc.cl/empleadores/esta-formando-una-empresa/cotizaciones-cuanto-y-como-debo-pagar/",
+      "type": "official-page"
+    }
+  ],
+  "managedParameters": {
+    "sueldoMinimo": {
+      "value": 539000,
+      "unit": "CLP",
+      "label": "Sueldo minimo mensual",
+      "validity": "Vigente desde enero 2026",
+      "expectedChangeFrequency": "Anual o por ley especial",
+      "sourceId": "dt-ingreso-minimo",
+      "lastVerifiedAt": "2026-04-24",
+      "manualReviewRequired": true
+    },
+    "topesImponibles": {
+      "afpSalud": {
+        "value": 89.9,
+        "unit": "UF",
+        "label": "Tope imponible AFP y salud",
+        "validity": "Ano 2026",
+        "expectedChangeFrequency": "Anual",
+        "sourceId": "spensiones-tope-afp",
+        "lastVerifiedAt": "2026-04-24",
+        "manualReviewRequired": true
+      },
+      "afc": {
+        "value": 135.2,
+        "unit": "UF",
+        "label": "Tope imponible Seguro de Cesantia",
+        "validity": "Ano 2026",
+        "expectedChangeFrequency": "Anual",
+        "sourceId": "spensiones-tope-afc",
+        "lastVerifiedAt": "2026-04-24",
+        "manualReviewRequired": true
+      }
+    },
+    "afp": {
+      "expectedChangeFrequency": "Variable durante el ano",
+      "sourceId": "spensiones-afp",
+      "lastVerifiedAt": "2026-04-24",
+      "manualReviewRequired": true,
+      "items": [
+        {
+          "id": "uno",
+          "name": "AFP Uno",
+          "commission": 0.0046,
+          "mandatoryContribution": 0.1,
+          "totalWorkerRate": 0.1046
+        },
+        {
+          "id": "modelo",
+          "name": "AFP Modelo",
+          "commission": 0.0058,
+          "mandatoryContribution": 0.1,
+          "totalWorkerRate": 0.1058
+        },
+        {
+          "id": "planvital",
+          "name": "AFP PlanVital",
+          "commission": 0.0116,
+          "mandatoryContribution": 0.1,
+          "totalWorkerRate": 0.1116
+        },
+        {
+          "id": "habitat",
+          "name": "AFP Habitat",
+          "commission": 0.0127,
+          "mandatoryContribution": 0.1,
+          "totalWorkerRate": 0.1127
+        },
+        {
+          "id": "cuprum",
+          "name": "AFP Cuprum",
+          "commission": 0.0144,
+          "mandatoryContribution": 0.1,
+          "totalWorkerRate": 0.1144
+        },
+        {
+          "id": "capital",
+          "name": "AFP Capital",
+          "commission": 0.0144,
+          "mandatoryContribution": 0.1,
+          "totalWorkerRate": 0.1144
+        },
+        {
+          "id": "provida",
+          "name": "AFP ProVida",
+          "commission": 0.0145,
+          "mandatoryContribution": 0.1,
+          "totalWorkerRate": 0.1145
+        }
+      ]
+    },
+    "honorarios": {
+      "expectedChangeFrequency": "Anual, segun calendario legal",
+      "sourceId": "sii-honorarios",
+      "lastVerifiedAt": "2026-04-24",
+      "manualReviewRequired": true,
+      "retenciones": [
+        {
+          "year": 2025,
+          "rate": 0.145
+        },
+        {
+          "year": 2026,
+          "rate": 0.1525
+        },
+        {
+          "year": 2027,
+          "rate": 0.16
+        },
+        {
+          "year": 2028,
+          "rate": 0.17
+        }
+      ]
+    },
+    "iva": {
+      "value": 0.19,
+      "unit": "rate",
+      "label": "IVA general",
+      "validity": "Vigente",
+      "expectedChangeFrequency": "Muy baja, solo por cambio legal",
+      "sourceId": "sii-valores",
+      "lastVerifiedAt": "2026-04-24",
+      "manualReviewRequired": true
+    },
+    "impuestoUnicoSegundaCategoria": {
+      "mode": "calculated-from-utm-and-local-brackets",
+      "recommendedAction": "No mantener tabla mensual en JSON mientras la app calcule con UTM actualizada y tramos legales en UTM.",
+      "optionalRemoteMonthlyTable": false,
+      "expectedChangeFrequencyIfMonthlyTableIsUsed": "Mensual",
+      "sourceId": "sii-valores"
+    }
+  }
+}
