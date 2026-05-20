@@ -3,6 +3,24 @@
   "country": "CL",
   "product": "Calculadora Laboral Chile",
   "version": "2026.04.1",
+  "changelog": [
+  {
+    "version": "0.2.0",
+    "date": "2026-06-10",
+    "changes": [
+      "Nuevo módulo de liquidaciones",
+      "Corrección en cálculo de finiquito"
+    ]
+  },
+  {
+    "version": "0.1.0",
+    "date": "2026-05-19",
+    "changes": [
+      "Versión inicial"
+    ]
+  }
+]
+
   "status": "active",
   "lastReviewedAt": "2026-04-25",
   "validFrom": "2026-04-01",
