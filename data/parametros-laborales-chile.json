@@ -3,11 +3,13 @@
   "country": "CL",
   "product": "Calculadora Laboral Chile",
   "version": "2026.04.1",
+  "appVersion": "1.0.0",
   "status": "active",
-  "lastReviewedAt": "2026-04-25",
+  "lastReviewedAt": "2026-05-19",
   "validFrom": "2026-04-01",
   "nextSuggestedReviewAt": "2026-05-01",
   "notes": "Archivo remoto/manual para parametros laborales variables. Los valores deben revisarse contra fuentes oficiales antes de publicar cambios.",
+   "changelog": [],
   "sources": [
     {
       "id": "sii-valores",
